@@ -5,7 +5,11 @@
         <h3>{{ item }}</h3>
       </el-carousel-item>
     </el-carousel>
-  </div>
+    <ul>
+       <router-link to="/home">吃货点击</router-link>
+       <router-link to="/myComponet">自定义组件</router-link>
+    </ul>
+    </div>
 </template>
 
 <script>
@@ -27,6 +31,7 @@ h1, h2 {
 ul {
   list-style-type: none;
   padding: 0;
+  text-align: left;
 }
 li {
   display: inline-block;
@@ -38,16 +43,14 @@ a {
 
 .hello{
   display: flex;
-  justify-content: center;
   flex-direction: column;
-
-
 }
 
 #flexTest  {
   display: flex; /*使用flex布局*/
   flex-direction: column;
   width: 200px;
+  text-align: left;
 }
 
 
@@ -58,27 +61,27 @@ input  {
 
 }
 
-  .el-carousel__item h3 {
-    color: #475669;
-    font-size: 18px;
-    opacity: 0.75;
-    line-height: 300px;
-    margin: 0;
-  }
+.el-carousel__item h3 {
+  color: #475669;
+  font-size: 18px;
+  opacity: 0.75;
+  line-height: 300px;
+  margin: 0;
+}
 
-  .el-carousel__item:nth-child(4n) {
-    background-color: #99a9bf;
-  }
+.el-carousel__item:nth-child(4n) {
+  background-color: #99a9bf;
+}
 
-  .el-carousel__item:nth-child(4n+1) {
-    background-color: #d3dce6;
-  }
+.el-carousel__item:nth-child(4n+1) {
+  background-color: #d3dce6;
+}
 
-  .el-carousel__item:nth-child(4n+2) {
-    background-color: bisque;
-  }
+.el-carousel__item:nth-child(4n+2) {
+  background-color: bisque;
+}
 
-  .el-carousel__item:nth-child(4n+3) {
-    background-color: lightyellow;
-  }
+.el-carousel__item:nth-child(4n+3) {
+  background-color: lightyellow;
+}
 </style>

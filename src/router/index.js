@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
-import Carousel from '@/components/Carousel'
+import Home from '@/components/Home'
+import MyComponet from '@/components/MyComponet'
 
 Vue.use(Router)
 
@@ -13,9 +14,14 @@ export default new Router({
       component: HelloWorld
     },
     {
-      path: '/carousel',
-      name: 'Carousel',
-      component: Carousel
+      path: '/home',
+      name: 'Home',
+      component: Home
+    },
+    {
+      path: '/myComponet',
+      name: 'MyComponet',
+      component: MyComponet
     }
   ]
 })
